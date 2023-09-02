@@ -1,0 +1,91 @@
+{
+    "Events": {
+        "InteractionCreate": {
+            "DevAuthor": "Developer-only command",
+            "DevDescription": "> You can't use this command",
+            "PremiumExpired": "> This server's premium subscription has expired",
+            "PremiumNone": "> You don't have premium, you can buy a premium subscription at [froxybot.xyz/premium](https://froxybot.xyz/premium)",
+            "NoPermissionsAuthor": "Insufficient permissions",
+            "NoPermissionsBotDescription": "I need the following permissions",
+            "NoPermissionsUserDescription": "You need the following permissions"
+        }
+    },
+    "Commands": {
+        "Language": {
+            "EmbedAuthor": "Hi ",
+            "EmbedDescription": "> The language has been updated to "
+        },
+        "VoiceSay": {
+            "MaxLength": "> I can only reproduce text with a maximum length of 150 letters",
+            "NowPlaying": "> The bot is being used for music \n > Re-use the command when done",
+            "SayText": "> Repeating the text in the voice channel"
+        },
+        "Music": {
+            "Loop": {
+                "BucleToMusic": ">Loop mode activated to the song",
+                "BucleToPlaylist": "> Loop mode activated to the playlist",
+                "BucleNone": "> Loop mode off"
+            },
+            "Pause": {
+                "MusicPause": "> The song is already paused",
+                "PauseMusic": "> The song was paused"
+            },
+            "Play": {
+                "NoYoutube": "> Youtube links are not allowed",
+                "AddPlaylist": "`> Playlist **${playlistInfo.name}** with **${tracks.length}** songs added`",
+                "AddSong": "`> Song **[${track.info.title}](${track.info.uri})** by \\`${(track.info.author)}\\` added \\`${trackDuration}\\``"
+            },
+            "Playlist": {
+                "Playlist": "Playlist",
+                "FieldSong": "Playing",
+                "FieldLength": "Duration",
+                "Footer": "`Queue Songs: ${player.queue.length} Songs`"
+            },
+            "Resume": {
+                "Resume": "> The song is now playing",
+                "NoPause": "> The song is not paused"
+            },
+            "Search": {
+                "NoLink": "`> Use the command \\`/play\\` to search with URL`",
+                "SelectSong": "Select a song here",
+                "SongList": "Songs found for your search",
+                "NoMenu": "> You cannot use this menu, you must use the command \\`/search\\`",
+                "SongBy": "`Song requested by ${interaction.user.username}`",
+                "CollectEnd": "> Time is up, please try the command again"
+            },
+            "Skip": {
+                "Skip": "`> Song skipped by ${interaction.user.username}`"
+            },
+            "Stop": {
+                "ListEnd": "`> Queue terminated by ${interaction.user}, I'll leave the voice channel`"
+            },
+            "MusicButtons": {
+                "Stop": "Stop",
+                "Skip": "Skip",
+                "Pause": "Pause",
+                "IsPause": "Continue",
+                "Playlist": "Playlist"
+            }
+        }
+    },
+    "PoruEvents": {
+        "QueueEnd": {
+            "TimeoutAuthor": "Disconnected",
+            "TimeoutDescription": "> 3 minutes have passed without playback \n > I have disconnected from the channel"
+        },
+        "TrackStart": {
+            "FieldLength": "Duration",
+            "FieldList": "In queue",
+            "FieldListValue": " songs",
+            "FieldSongs": "songs waiting",
+            "SongRequesterBy": "`Song requested by ${track.info.requester.username}`"
+        }
+    },
+    "EmbedAuthor": "Hi ",
+    "NoMusic": "> There is no song playing",
+    "NoUserChannel": "> You have to be on a voice channel",
+    "UserAndBotChannel": "> You have to be on the same channel as me",
+    "MusicError": "> Couldn't play the song, please try again",
+    "NoPlaylist": "> There aren't that many songs to have a playlist",
+    "ButtonMusicEnd": "Finished song"
+}

@@ -1,0 +1,91 @@
+{
+    "Events": {
+        "InteractionCreate": {
+            "DevAuthor": "Comando solo para desarrolladores",
+            "DevDescription": "> No puedes usar este comando",
+            "PremiumExpired": "> La suscripción premium de este servidor ha expirado",
+            "PremiumNone": "> No tienes premium, puedes comprar una suscripción premium en [froxybot.xyz/premium](https://froxybot.xyz/premium)",
+            "NoPermissionsAuthor": "Permisos insuficientes",
+            "NoPermissionsBotDescription": "Necesito los siguientes permisos",
+            "NoPermissionsUserDescription": "Necesitas los siguientes permisos"
+        }
+    },
+    "Commands": {
+        "Language": {
+            "EmbedAuthor": "Hola ",
+            "EmbedDescription": "> El idioma se ha actualizado a "
+        },
+        "VoiceSay": {
+            "MaxLength": "> Solo puedo reproducir texto con longitud máxima de 150 letras",
+            "NowPlaying": "> El bot está siendo usado para música \n > Vuelve a usar el comando cuando termine",
+            "SayText": "> Repitiendo el texto en el canal de voz"
+        },
+        "Music": {
+            "Loop": {
+                "BucleToMusic": "> Modo bucle activado a la canción",
+                "BucleToPlaylist": "> Modo bucle activado a la playlist",
+                "BucleNone": "> Modo bucle desactivado"
+            },
+            "Pause": {
+                "MusicPause": "> La canción ya esta pausada",
+                "PauseMusic": "> La canción fue pausada"
+            },
+            "Play": {
+                "NoYoutube": "> No se permiten enlaces de youtube",
+                "AddPlaylist": "`> Playlist **${playlistInfo.name}** con **${tracks.length}** canciones añadida`",
+                "AddSong": "`> Canción **[${track.info.title}](${track.info.uri})** de \\`${(track.info.author)}\\` añadida \\`${trackDuration}\\``"
+            },
+            "Playlist": {
+                "Playlist": "Lista de reproducción",
+                "FieldSong": "Reproduciendo",
+                "FieldLength": "Duración",
+                "Footer": "`Canciones en espera: ${player.queue.length} Canciones`"
+            },
+            "Resume": {
+                "Resume": "> La canción ahora esta en reproducción",
+                "NoPause": "> La canción no esta pausada"
+            },
+            "Search": {
+                "NoLink": "`> Utiliza el comando \\`/play\\` para buscar con URL`",
+                "SelectSong": "Selecciona una canción aqui",
+                "SongList": "Canciones encontradas para tu búsqueda",
+                "NoMenu": "> No puedes usar este menú, debes usar el comando \\`/search\\`",
+                "SongBy": "`Canción solicitada por ${interaction.user.username}`",
+                "CollectEnd": "> Se ha terminado el tiempo, vuelve a usar el comando"
+            },
+            "Skip": {
+                "Skip": "`> Canción saltada por ${interaction.user.username}`"
+            },
+            "Stop": {
+                "ListEnd": "`> Cola terminada por ${interaction.user}, me saldré del canal de voz`"
+            },
+            "MusicButtons": {
+                "Stop": "Detener",
+                "Skip": "Saltar",
+                "Pause": "Pausar",
+                "IsPause": "Continuar",
+                "Playlist": "Lista"
+            }
+        }
+    },
+    "PoruEvents": {
+        "QueueEnd": {
+            "TimeoutAuthor": "Desconectado",
+            "TimeoutDescription": "> Han pasado 3 minutos sin reproducción \n > Me he desconectado del canal"
+        },
+        "TrackStart": {
+            "FieldLength": "Duración",
+            "FieldList": "En cola",
+            "FieldListValue": " Canciones",
+            "FieldSongs": "Canciones a la espera",
+            "SongRequesterBy": "`Canción solicitada por ${track.info.requester.username}`"
+        }
+    },
+    "EmbedAuthor": "Hola ",
+    "NoMusic": "> No hay ninguna canción en reproducción",
+    "NoUserChannel": "> Tienes que estar en un canal de voz",
+    "UserAndBotChannel": "> Tienes que estar en el mismo canal que yo",
+    "MusicError": "> No pude reproducir la canción, intenta de nuevo",
+    "NoPlaylist": "> No hay tantas canciones como para tener una playlist",
+    "ButtonMusicEnd": "Canción finalizada"
+}
