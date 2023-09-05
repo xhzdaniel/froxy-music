@@ -42,10 +42,8 @@ module.exports = {
       deaf: true,
     });
 
-    let resolve = await client.poru.resolve(cancion, "spotify");
-    if (!resolve) {
-      resolve = await client.poru.resolve(cancion, "scsearch");
-    }
+    let resolve = await client.poru.resolve(cancion, 'spotify');
+    if (!resolve) return await client.poru.resolve(cancion, 'scsearch');
     const { loadType, tracks, playlistInfo } = resolve;
     if (loadType === 'PLAYLIST_LOADED') {
       for (const track of resolve.tracks) {
