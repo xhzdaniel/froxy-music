@@ -12,7 +12,7 @@ si tienes dudas, errores o preguntas sobre como se usa, unete al Discord de Sopo
   * Un [cluster de MongoDB](https://www.mongodb.com/es/cloud/atlas/) para la base de datos.
   * Hostearlo en un VPS o hosting para bots de discord (para no tener tu PC encendido 24/7)
 
-  También puedes hostearlo en[**Kuinz Hosting**](https://kuinzhosting.com/discord/)
+  También puedes hostearlo en [**Kuinz Hosting**](https://kuinzhosting.com/discord/)
   
 
 ## 🤖 Configuración Básica
